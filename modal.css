@@ -17,7 +17,7 @@ p{ margin: 0; }
 .btn-b:after{ content: ''; position: absolute; display: block; width: 60px; height: 30px; background: #c9c9c9; left: 0; top: -29px; border-top-left-radius: 60px; border-top-right-radius: 60px;}
 .container{  }
 .container .mask{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); }
-.container .modal{ width: 50%; height: 160px; position: absolute; top: 50%; left: 50%; padding: 20px 15px; border-radius: 5px; transform: translate(-50%, -70%); -webkit-transform: translate(-50%，-70%); background: #f3f3f3;}
+.container .modal{ width: 50%; height: 160px; position: absolute; top: 50%; left: 50%; padding: 20px 15px; border-radius: 5px; transform: translate(-50%, -70%);  background: #f3f3f3;}
 .container .modal p{ margin-top: 20px; margin-bottom: 20px; font-size: 16px; color: #353535; text-align: center;}
 .confirm{ display: block; width: 120px; height: 40px; margin: 0 auto; border: none; font-size: 16px; border-radius: 5px; color: #ffffff; background: #f45cae; }
 .type_words{ padding: 12px 20px; }
@@ -43,3 +43,16 @@ p{ margin: 0; }
     z-index: 10;
 }
 .text{color: white}
+
+#moon {
+    position: absolute; /* 确保它能脱离文档流并自由定位 */
+    top: 105px;
+    right: 125px;
+    width: 74px; /* 你可以根据需要调整宽度 */
+    height: 74px; /* 你可以根据需要调整高度 */
+    z-index: 9999; /* 确保它处于页面的最上层 */
+    cursor: pointer;
+}
+#cas {
+    z-index: 1; /* 让 canvas 层级低于 moon */
+}
